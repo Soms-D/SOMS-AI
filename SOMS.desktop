@@ -1,0 +1,13 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=SOMS
+GenericName=Self-Organizing Master System
+Comment=Private local AI assistant — chat, voice, system control
+Exec=/home/soms/Project/SOMS-AI/venv/bin/python /home/soms/Project/SOMS-AI/main.py
+Icon=/home/soms/Project/SOMS-AI/soms_icon.png
+Terminal=false
+Categories=Utility;System;Office;
+Keywords=AI;assistant;voice;chat;automation;
+StartupNotify=true
+Path=/home/soms/Project/SOMS-AI

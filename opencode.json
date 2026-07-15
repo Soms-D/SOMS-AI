@@ -1,0 +1,33 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "model": "ollama/qwen2.5-coder:latest",
+  "provider": {
+    "ollama": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "Ollama (local)",
+      "options": {
+        "baseURL": "http://localhost:11434/v1"
+      },
+      "models": {
+        "qwen2.5-coder:latest": {
+          "name": "Qwen2.5-coder:latest"
+        },
+        "dolphin-phi:2.7b": {
+          "name": "Dolphin-phi:2.7b"
+        },
+        "socialnetwooky/llama3.2-abliterated:1b_q4_k_m": {
+          "name": "Socialnetwooky/llama3.2-abliterated:1b_q4_k_m"
+        },
+        "fredrezones55/Gemma-4-Uncensored-HauhauCS-Aggressive:latest": {
+          "name": "Fredrezones55/Gemma-4-Uncensored-HauhauCS-Aggressive:latest"
+        },
+        "llama2-uncensored:7b": {
+          "name": "Llama2-uncensored:7b"
+        },
+        "uncensoredAi/diddy:latest": {
+          "name": "UncensoredAi/diddy:latest"
+        }
+      }
+    }
+  }
+}

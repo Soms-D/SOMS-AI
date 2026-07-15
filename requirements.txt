@@ -1,0 +1,37 @@
+# SOMS-AI Python dependencies
+#
+# Install inside the project virtual environment:
+#   python3 -m venv venv
+#   ./venv/bin/pip install -U pip
+#   ./venv/bin/pip install -r requirements.txt
+#
+# System packages are documented in README.md and must not be placed in this
+# pip requirements file.
+
+flet>=0.25
+textual>=0.85
+rich>=13.7
+prompt_toolkit>=3.0
+requests>=2.31
+psutil>=5.9
+ollama>=0.4
+
+# Voice
+SpeechRecognition>=3.10
+webrtcvad>=2.0.10
+faster-whisper>=1.0.3
+PyAudio>=0.2.14
+
+# Camera and image handling
+opencv-python-headless>=4.9
+Pillow>=10.0
+
+# Memory
+chromadb>=0.5
+
+# Forecasting
+numpy>=1.26.4
+safetensors>=0.5.3
+huggingface_hub>=0.23.0
+timesfm[torch]>=2.0.2
+torch>=2.0

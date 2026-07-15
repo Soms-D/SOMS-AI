@@ -1,0 +1,70 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "soms-ai"
+version = "1.0.0"
+description = "Local-first AI assistant with GUI, CLI, voice, memory, and forecasting tools."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "flet>=0.25",
+  "textual>=0.85",
+  "rich>=13.7",
+  "prompt_toolkit>=3.0",
+  "requests>=2.31",
+  "psutil>=5.9",
+  "ollama>=0.4",
+  "SpeechRecognition>=3.10",
+  "webrtcvad>=2.0.10",
+  "faster-whisper>=1.0.3",
+  "PyAudio>=0.2.14",
+  "opencv-python-headless>=4.9",
+  "Pillow>=10.0",
+  "chromadb>=0.5",
+  "numpy>=1.26.4",
+  "safetensors>=0.5.3",
+  "huggingface_hub>=0.23.0",
+  "timesfm[torch]>=2.0.2",
+  "torch>=2.0",
+]
+
+[project.scripts]
+soms-ai = "main:main"
+
+[tool.setuptools]
+py-modules = [
+  "agent",
+  "architect",
+  "auditor",
+  "chat_history",
+  "cleaner",
+  "cli",
+  "config_manager",
+  "constants",
+  "demonstrator",
+  "diagnostician",
+  "engineer",
+  "evolver",
+  "forecasting",
+  "growth",
+  "improver",
+  "llm_client",
+  "main",
+  "memory",
+  "model_manager",
+  "orchestrator",
+  "package_architect",
+  "persona",
+  "self_heal",
+  "sentinel",
+  "skills",
+  "tui",
+  "voice",
+]
+packages = ["soms"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
